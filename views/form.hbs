@@ -1,0 +1,28 @@
+<div class="container w-50">
+    <form onsubmit="return addMessage(this)" style="text-align: center;">
+        <div class="card border-primary m-3 p-3">
+            <div style="margin-bottom:1em;">
+                <label style="display: block;">Ingresar nombre</label>
+                <input style="display: block; margin: auto;" name="title" type="text" id="nombre">
+            </div>
+            <div style="margin-bottom:1em;">
+                <label style="display: block;">Ingresar precio</label>
+                <input style="display: block; margin: auto;" name="price" type="number" id="precio">
+            </div>
+            <div style="margin-bottom:1em;">
+                <label style="display: block;">Ingresar url imagen</label>
+                <input style="display: block; margin: auto;" name="thumbnail" type="text" id="imagen">
+            </div>
+            <button class="m-auto" type="submit" value="send">Cargar</button>
+        </div>
+        
+    </form>
+    {{!-- <form onsubmit="return addMessage(this)" style="text-align: center;">
+        <input type="text" id="username" placeholder="Tu Nombre" >
+        <input type="text" id="texto" placeholder="Cuéntanos algo...">
+        <input type="submit" value="Enviar">
+    </form> --}}
+</div>
+<div style="text-align: center;margin-top:2em">
+    <a href='http://localhost:8080/productos'>Productos cargados</a>
+</div>
